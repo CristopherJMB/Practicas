@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>LIsta de tareas</title>
+        <style>
+            body{
+                font-family: sans-serif;
+                max-width: 600px;
+                margin: 2erm auto;
+            }
+
+            .completed {
+                text-decoration: line-through;
+                color: #888;
+            }
+
+            button{
+                margin-left: 5erm;
+            }
+        </style>
+        
+    </head>
+    <body>
+
+    <!-- Imputs y botones de filtro-->
+    <input type="text" id="task-input" placeholder="Nueva tarea...">
+    <button id="add-btn">Agregar</button>
+    <br>
+
+    </br>
+
+    <!--Botones de filtros-->
+    <div style="margin-top:1erm;">
+        <button data-filter="all">Todas</button>
+        <button data-filter="completed">Completadas</button>
+        <button data-filter="pending">Pendientes</button>
+    </div>
+
+    <!--Contenedores donde se muestran las tareas-->
+    <ul id="task-list"></ul>
+
+    <!--Cargar la vista-->        
+        <script src="app.js" ></script>
+    </body>
+</html>
